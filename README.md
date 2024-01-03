@@ -1,4 +1,4 @@
-# 🐟😁 고려대학교 지능정보 4조 😁🐟
+# 🐟😁 고려대학교 지능정보 4조 프로젝트😁🐟
 
 # Multimodal Based OTT English Education Platform -- DailSH 
 
