@@ -1,0 +1,49 @@
+.videoItem {
+  min-width: 250px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.videoItem:hover {
+  transform: scale(1.1);
+}
+
+.videoItem span {
+  display: block;
+  margin: 5px;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.title {
+  font-size: 1em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: auto;
+  width: 99%;
+  transition: 0.1s;
+}
+.title:hover {
+  overflow: visible;
+  text-overflow: clip;
+  height: fit-content;
+  display: block;
+}
+
+.publishAt {
+  font-size: 0.7em;
+  color: rgba(100, 100, 100, 0.8);
+}
+
+.channelTitle {
+  font-size: 0.7em;
+  margin-top: 1px;
+  color: rgba(100, 100, 100, 0.8);
+}

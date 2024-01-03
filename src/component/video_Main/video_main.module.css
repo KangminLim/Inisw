@@ -1,0 +1,44 @@
+@media screen and ( width <= 1200px) {
+  .videoMain {
+      flex-direction : column;
+  }
+  .videoList.selected ,.videoPlay{
+      width: 100%;   
+  }
+}
+
+@media screen and ( width > 1200px) {
+  .videoMain {
+      flex-direction : row;
+  }
+  .videoPlay{
+      width:69%;   
+  }
+  .videoList.selected{
+      width: 30%;
+  }
+}
+
+.videoMain {
+  display: flex;
+  width:80%;
+  margin : 0 auto;
+  padding-top : 12vh;
+}
+
+.videoList {
+  width: 100%;   
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap:30px;
+}
+
+
+
+.videoPlay{
+  margin-right:1%;
+}
+
+.hidden{
+  visibility: hidden;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        ol {
+            font-family: Roboto, sans-serif;
+            font-weight: bold;
+            padding-left: 20px;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 80px;
+        }
+
+        li {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .video-container{
+            display: flex;
+            justify-content: center;
+        }
+        .video-label {
+            background-color: #583DFE;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 23px;
+        }
+
+        video {
+            width: 320px;
+            height: 240px;
+            outline: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h4><span style="border-radius: 15px 15px 15px 0; font-size: 20px; border: 4px solid #5A3BFE; padding: 0.4em 0.4em; color: #5A3BFE;">Similarity Rank</span></h4>
+        <ol>
+            {% for index in list%}
+            <li>{{index}}</li>
+            {% endfor %}
+        </ol>
+
+    <h2><span style="border-radius: 15px 15px 15px 0; font-size: 20px; border: 4px solid #5A3BFE; padding: 0.4em 0.4em; color: #5A3BFE;">Play Video</span></h2>
+    {% for v in filename%}  
+    <div class="video-container"> 
+    <video width="1280" height="960" controls>
+        <source src= "{{ url_for('static', filename= v) }}#t=90" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+    {% endfor %}
+</body> 
+</html>

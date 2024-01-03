@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title>:Dailish 영상에서 일상을 배우다</title>
+        <style>
+            body {
+                background-image: url("background_img.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+    
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; /* 중앙 정렬을 위해 추가 */
+                height: 100%; /* 추가 */
+            }
+    
+            .query-label {
+                font-size: 30px;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 10px;
+                font-family: 'Roboto', sans-serif;
+                margin-top: -40px; /* 추가 */
+            }
+    
+            input[type="text"],
+            input[type="submit"] {
+                margin-top: 10px;
+                padding: 8px 12px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+    
+            input[type="text"] {
+                width: 300px;
+                height: 32px;
+                font-size: 15px;
+                border: 0;
+                border-radius: 15px;
+                outline: none;
+                padding-left: 10px;
+                background-color: rgb(233, 233, 233);
+            }
+    
+            input[type="submit"] {
+                width: 100px;
+                background-color: #5A3BFE;
+                color: #fff;
+                cursor: pointer;
+                margin-left: 10px;
+                border: none; /* 변경 */
+                border-radius: 4px; /* 변경 */
+                padding: 10px 20px; /* 변경 */
+            }
+    
+            .input-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-top: -10px; 
+            }
+    
+        </style>
+    </head>
+    
+<body> 
+    <form action="./video" name="queryForm" method="post">
+        <p class = "query-label"> Enter the situation you want to learn</p>
+        <div class="input-container">
+            <input type="text" name="query" />
+            <input type="submit" value="query" />
+        </div>
+    </form>
+</body> 
+
+</html>
